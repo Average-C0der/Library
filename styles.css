@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+:root {
+  --light-gray: #dededef3;
+  --title-color: #333756;
+  --main-color: #c6c6c6f3;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--light-gray);
+}
+header {
+  text-align: center;
+  padding-top: 4rem;
+  color: var(--title-color);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+button {
+  margin: 1rem;
+  padding: 0.8rem 2rem;
+  font-size: 14px;
+  border-radius: 25px;
+  background: white;
+  color: #333756;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.6s all ease;
+}
+:focus {
+  /*outline: 1px solid white;*/
+}
+
+button:hover {
+  background: var(--title-color);
+  color: white;
+}
+.add__book:hover,
+.cancel:hover {
+  background: var(--main-color);
+  color: var(--title-color);
+}
+.filter-btn {
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background: var(--light-gray);
+  border-bottom: 4px solid var(--title-color);
+}
+.library__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.book__container {
+  display: flex;
+  margin: 2rem 2rem;
+}
+.modal__container {
+  display: none;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 0px;
+}
+.book,
+.modal {
+  padding: 2rem 2rem;
+  border-radius: 15px;
+  background: #333756;
+  line-height: 3rem;
+}
+.modal {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 8rem;
+}
+.modal__content {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  color: white;
+  margin-right: 1rem;
+}
+input {
+  padding: 0.5rem;
+  font-size: 14px;
+}
+.book__read-elements {
+  display: flex;
+  justify-content: space-between;
+}
+.main,
+i {
+  color: white;
+  margin: 0.5rem;
+}
+.book__title,
+.book__author,
+.book__pages,
+.book__read {
+  color: var(--main-color);
+}
+.error__message--container {
+  display: none;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.error__message--modal {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 10rem;
+  width: 40%;
+}
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(101, 3, 3);
+  font-size: 20px;
+  font-weight: bold;
+  background: rgb(189, 96, 96);
+  padding: 3rem 5rem;
+  border-radius: 10px;
+}
+.error-btn {
+  color: rgb(101, 3, 3);
+  font-weight: bold;
+}
+.error-btn:hover {
+  color: white;
+  background: rgb(101, 3, 3);
+}
+.no {
+  color: rgb(194, 89, 89);
+}
+.yes {
+  color: rgb(110, 176, 120);
+}
+footer {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0.5rem;
+}
+a {
+  text-decoration: none;
+  color: var(--title-color);
+}
+a:hover {
+  text-decoration: underline;
+}
